@@ -1,0 +1,12 @@
+
+.text-right{
+  text-align: right;
+}
+.see-more{
+  color: #da254e;
+  text-decoration: unset;
+}
+.see-more:hover{
+  color: #da254e;
+  text-decoration: underline;
+}

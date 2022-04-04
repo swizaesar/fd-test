@@ -34,9 +34,13 @@ export const CardProductStyle = styled(Card)`
             &__name {
                 font-size: 12px;
                 font-weight: bold;
+                color: #4a4a4a;
+                text-transform: capitalize;
             }
             &__position {
                 font-size: 10px;
+                color: #aaa;
+                font-weight: 600;
             }
         }
     }
@@ -82,7 +86,8 @@ export const CardReviewStyle = styled(Card)`
                 font-size: 14px;
                 &-text {
                     display: -webkit-box;
-                    -webkit-line-clamp: 3;
+                    -webkit-line-clamp: ${(props) =>
+                        props.isRead ? "unset" : 3};
                     -webkit-box-orient: vertical;
                     text-overflow: ellipsis;
                     overflow: hidden;

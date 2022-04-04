@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { color } from "../../Utils/Variable";
 
 const Style = styled.footer`
     padding: 30px;
@@ -14,9 +15,11 @@ const Style = styled.footer`
                     text-decoration: unset;
                     font-weight: bold;
                     font-size: 14px;
+                    transition: all 0.25s ease;
                     &:hover {
                         text-decoration: unset;
-                        color: #000;
+                        color: ${color.primary};
+                        transition: all 0.25s ease;
                     }
                 }
             }

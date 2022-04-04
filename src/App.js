@@ -12,6 +12,9 @@ const App = () => {
             <Header />
             <Home />
             <Footer />
+            <div className="bottom-frame">
+                Bottom Frame 970x50, 468x60, 320x50
+            </div>
         </React.Fragment>
     );
 };

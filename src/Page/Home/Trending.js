@@ -39,6 +39,19 @@ const Trending = ({ product }) => {
                                         </div>
                                     );
                                 })}
+                            {product &&
+                                product.map((item, key) => {
+                                    return (
+                                        <div key={key}>
+                                            <div className="card-slider">
+                                                <CardProduct
+                                                    useUser={false}
+                                                    item={item}
+                                                />
+                                            </div>
+                                        </div>
+                                    );
+                                })}
                         </Slider>
                     </Col>
                 </Row>

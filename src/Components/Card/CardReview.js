@@ -5,8 +5,10 @@ import { CardReviewStyle } from "./style";
 import userDummy from "../Assets/Images/user-icon.jpg";
 
 const CardReview = ({ item }) => {
+    const [isRead, setRead] = React.useState(false);
+    const handleReadMore = () => setRead(!isRead);
     return (
-        <CardReviewStyle>
+        <CardReviewStyle isRead={isRead}>
             <CardBody>
                 <div className="card-top">
                     <img
@@ -29,8 +31,11 @@ const CardReview = ({ item }) => {
                         <span className="card-top__comment-text">
                             {item.comment}
                         </span>{" "}
-                        <span className="card-top__comment-button">
-                            Read More
+                        <span
+                            onClick={handleReadMore}
+                            className="card-top__comment-button"
+                        >
+                            {isRead ? "Hide" : "Read More"}
                         </span>
                     </div>
                 </div>

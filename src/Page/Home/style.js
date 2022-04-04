@@ -126,7 +126,19 @@ const Style = styled.div`
                     }
                 }
                 &-list {
-                    min-height: 335px;
+                    min-height: 345px;
+                }
+            }
+        }
+        &-trending {
+            .slick {
+                &-slider {
+                    .fa-angle-right {
+                        right: 400px;
+                    }
+                    .fa-angle-left {
+                        left: 400px;
+                    }
                 }
             }
         }

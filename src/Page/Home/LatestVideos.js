@@ -18,6 +18,7 @@ const LatestVideos = () => {
                     <div className="grid">
                         <div className="grid-1">
                             <iframe
+                                title="latest videos"
                                 height="100%"
                                 width="100%"
                                 src="https://www.youtube.com/embed/6LUdS0VFOJc"
@@ -26,6 +27,7 @@ const LatestVideos = () => {
                         </div>
                         <div className="grid-2">
                             <iframe
+                                title="latest videos"
                                 height="100%"
                                 width="100%"
                                 src="https://www.youtube.com/embed/3xX85gS--cs"
@@ -34,6 +36,7 @@ const LatestVideos = () => {
                         </div>
                         <div className="grid-3">
                             <iframe
+                                title="latest videos"
                                 height="100%"
                                 width="100%"
                                 src="https://www.youtube.com/embed/BKrWndOeFW4"

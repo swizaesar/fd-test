@@ -41,17 +41,14 @@ const Footer = () => {
                     <Col sm={3}>
                         <h6 className="footer-text">Download Our Mobile App</h6>
                         <div className="footer-download">
-                            <a
-                                href="https://itunes.apple.com/id/app/female-daily-beauty-review/id1160742672?l=id&mt=8"
-                                className="footer-download__app"
-                            >
+                            <a href="#" className="footer-download__app">
                                 <img
                                     src={AppStore}
                                     alt="App Store"
                                     className="img-fluid"
                                 />
                             </a>
-                            <a href="https://play.google.com/store/apps/details?id=com.fdbr.android&hl=en_GB">
+                            <a href="#">
                                 <img
                                     src={GooglePlayStore}
                                     alt="Google Play Store"
@@ -79,7 +76,7 @@ const Footer = () => {
                         <ul className="footer-sosmed">
                             <li className="footer-sosmed__list">
                                 <a
-                                    href="https://www.facebook.com/FemaleDailyNetwork/"
+                                    href="#"
                                     className="footer-sosmed__list-item"
                                 >
                                     <img
@@ -91,7 +88,7 @@ const Footer = () => {
                             </li>
                             <li className="footer-sosmed__list">
                                 <a
-                                    href="https://twitter.com/femaledaily"
+                                    href="#"
                                     className="footer-sosmed__list-item"
                                 >
                                     <img
@@ -103,7 +100,7 @@ const Footer = () => {
                             </li>
                             <li className="footer-sosmed__list">
                                 <a
-                                    href="https://www.instagram.com/femaledailynetwork/"
+                                    href="#"
                                     className="footer-sosmed__list-item"
                                 >
                                     <img
@@ -115,7 +112,7 @@ const Footer = () => {
                             </li>
                             <li className="footer-sosmed__list">
                                 <a
-                                    href="https://www.youtube.com/user/FemaleDailyNetwork"
+                                    href="#"
                                     className="footer-sosmed__list-item"
                                 >
                                     <img

@@ -28,7 +28,7 @@ const MatchSkin = ({ product = [] }) => {
                                     </Button>
                                 </div>
                             </Col>
-                            <Col sm={8}>
+                            <Col sm={9}>
                                 <Row>
                                     {product?.length > 0
                                         ? product.map((item, key) => {

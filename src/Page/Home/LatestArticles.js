@@ -11,7 +11,7 @@ const LatestArticles = ({ product }) => {
                     <h3 className="title">Latest Articles</h3>
                     <div className="sub-title">
                         <span>So you can make better purchase decision</span>
-                        <a href="#" className="see-more">
+                        <a href="/" className="see-more">
                             See More <i className="fas fa-angle-right"></i>
                         </a>
                     </div>

@@ -23,7 +23,7 @@ const LatestReviews = ({ product = [] }) => {
                                 <span>
                                     So you can make better purchase decision
                                 </span>
-                                <a href="#" className="see-more">
+                                <a href="/" className="see-more">
                                     See More{" "}
                                     <i className="fas fa-angle-right"></i>
                                 </a>

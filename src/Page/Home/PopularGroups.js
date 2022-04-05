@@ -10,7 +10,7 @@ const PopularGroup = () => {
                     <h3 className="title">Popular Groups</h3>
                     <div className="sub-title">
                         <span>Where the beauty TALK are</span>
-                        <a href="#" className="see-more">
+                        <a href="/" className="see-more">
                             See More <i className="fas fa-angle-right"></i>
                         </a>
                     </div>

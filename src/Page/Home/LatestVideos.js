@@ -9,7 +9,7 @@ const LatestVideos = () => {
                     <h3 className="title">Latest Videos</h3>
                     <div className="sub-title">
                         <span>Watch and learn, ladies</span>
-                        <a href="#" className="see-more">
+                        <a href="/" className="see-more">
                             See More <i className="fas fa-angle-right"></i>
                         </a>
                     </div>

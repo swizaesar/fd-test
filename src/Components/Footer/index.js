@@ -41,14 +41,14 @@ const Footer = () => {
                     <Col sm={3}>
                         <h6 className="footer-text">Download Our Mobile App</h6>
                         <div className="footer-download">
-                            <a href="#" className="footer-download__app">
+                            <a href="/" className="footer-download__app">
                                 <img
                                     src={AppStore}
                                     alt="App Store"
                                     className="img-fluid"
                                 />
                             </a>
-                            <a href="#">
+                            <a href="/">
                                 <img
                                     src={GooglePlayStore}
                                     alt="Google Play Store"
@@ -76,7 +76,7 @@ const Footer = () => {
                         <ul className="footer-sosmed">
                             <li className="footer-sosmed__list">
                                 <a
-                                    href="#"
+                                    href="/"
                                     className="footer-sosmed__list-item"
                                 >
                                     <img
@@ -88,7 +88,7 @@ const Footer = () => {
                             </li>
                             <li className="footer-sosmed__list">
                                 <a
-                                    href="#"
+                                    href="/"
                                     className="footer-sosmed__list-item"
                                 >
                                     <img
@@ -100,7 +100,7 @@ const Footer = () => {
                             </li>
                             <li className="footer-sosmed__list">
                                 <a
-                                    href="#"
+                                    href="/"
                                     className="footer-sosmed__list-item"
                                 >
                                     <img
@@ -112,7 +112,7 @@ const Footer = () => {
                             </li>
                             <li className="footer-sosmed__list">
                                 <a
-                                    href="#"
+                                    href="/"
                                     className="footer-sosmed__list-item"
                                 >
                                     <img

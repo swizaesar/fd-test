@@ -10,7 +10,7 @@ const TopBrand = () => {
                     <h3 className="title"> Top Brand</h3>
                     <div className="sub-title">
                         <span>Wee all know and love</span>
-                        <a href="#" className="see-more">
+                        <a href="/" className="see-more">
                             See More <i className="fas fa-angle-right"></i>
                         </a>
                     </div>

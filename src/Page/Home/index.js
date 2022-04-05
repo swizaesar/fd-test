@@ -19,7 +19,7 @@ const Home = () => {
     const state = useSelector((state) => state);
     React.useEffect(() => {
         fetchApi.getProductList({ dispatch });
-    }, []);
+    }, [dispatch]);
     React.useEffect(() => {
         if (state?.productList?.isSuccess) {
             setData(state.productList.data);

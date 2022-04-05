@@ -21,6 +21,9 @@ const Style = styled.div`
         font-size: 26px;
         text-align: center;
         font-weight: 700;
+        @media (max-width: 970px) {
+            width: 100%;
+        }
     }
     .billboard {
         text-align: center;
@@ -36,6 +39,9 @@ const Style = styled.div`
         color: #5b5b5b;
         font-size: 26px;
         font-weight: 700;
+        @media (max-width: 970px) {
+            width: 100%;
+        }
     }
     .mr-2 {
         text-align: center;
@@ -51,6 +57,10 @@ const Style = styled.div`
         color: #5b5b5b;
         font-size: 26px;
         font-weight: 700;
+        @media (max-width: 420px) {
+            width: 200px;
+            height: 150px;
+        }
     }
     .section {
         &-choice {
@@ -112,10 +122,10 @@ const Style = styled.div`
                         font-size: 20px;
                     }
                     .fa-angle-right {
-                        right: 310px;
+                        right: calc(50% - 70px);
                     }
                     .fa-angle-left {
-                        left: 310px;
+                        left: calc(50% - 70px);
                     }
                 }
                 &-dots {
@@ -138,11 +148,11 @@ const Style = styled.div`
                 &-slider {
                     .fa-angle-right {
                         bottom: 25px;
-                        right: 520px;
+                        right: calc(50% - 80px);
                     }
                     .fa-angle-left {
                         bottom: 25px;
-                        left: 520px;
+                        left: calc(50% - 80px);
                     }
                 }
                 &-dots {

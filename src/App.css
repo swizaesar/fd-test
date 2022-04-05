@@ -24,3 +24,8 @@
   font-size: 26px;
   font-weight: 700;
 }
+@media(max-width: 970px){
+  .bottom-frame{
+    width: 100%;
+  }
+}

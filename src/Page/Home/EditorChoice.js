@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import CardProduct from "../../Components/Card/CardProduct";
+import SkeletonLoading from "../../Components/Skeleton";
 
 const EditorChoice = ({ product }) => {
     return (
@@ -11,14 +12,24 @@ const EditorChoice = ({ product }) => {
                     <span>Curated with love</span>
                 </div>
                 <Row>
-                    {product &&
-                        product.map((item, key) => {
-                            return (
-                                <Col key={key}>
-                                    <CardProduct useUser={true} item={item} />
-                                </Col>
-                            );
-                        })}
+                    {product
+                        ? product.map((item, key) => {
+                              return (
+                                  <Col key={key}>
+                                      <CardProduct useUser={true} item={item} />
+                                  </Col>
+                              );
+                          })
+                        : [...Array(5)].map((el, i) => {
+                              return (
+                                  <Col key={i}>
+                                      <SkeletonLoading
+                                          height={"250px"}
+                                          style={{ marginBottom: 15 }}
+                                      />
+                                  </Col>
+                              );
+                          })}
                 </Row>
             </Container>
         </div>

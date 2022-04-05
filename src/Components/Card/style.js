@@ -5,6 +5,8 @@ export const CardProductStyle = styled(Card)`
     margin-bottom: 30px;
     position: relative;
     cursor: pointer;
+    border: ${(props) =>
+        props.border === "true" ? "1px solid rgba(0,0,0,.125)" : "unset"};
     .product {
         &-image {
             padding: 20px;
@@ -15,6 +17,8 @@ export const CardProductStyle = styled(Card)`
         &-name {
             margin-bottom: 5px;
             font-size: 14px;
+            text-transform: uppercase;
+            font-weight: bold;
         }
         &-desc {
             font-size: 12px;
@@ -87,7 +91,7 @@ export const CardReviewStyle = styled(Card)`
                 &-text {
                     display: -webkit-box;
                     -webkit-line-clamp: ${(props) =>
-                        props.isRead ? "unset" : 3};
+                        props.active === "true" ? "unset" : 3};
                     -webkit-box-orient: vertical;
                     text-overflow: ellipsis;
                     overflow: hidden;

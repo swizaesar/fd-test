@@ -11,7 +11,12 @@ const Style = styled.div`
         }
     }
     span {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .rated {
         font-size: 12px;
+        font-weight: normal;
     }
 `;
 export default Style;

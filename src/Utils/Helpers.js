@@ -4,6 +4,9 @@ import BodyShopLogo from "../Components/Assets/Images/The-Body-Shop.png";
 import SkLogo from "../Components/Assets/Images/SKII_Logo.jpg";
 import MaybellineLogo from "../Components/Assets/Images/Maybelline-Logo.png";
 import InnisFreeLogo from "../Components/Assets/Images/innisfree.png";
+import JennyHouse from "../Components/Assets/Images/product/jennyhouse.jpg";
+import Femmue from "../Components/Assets/Images/product/femmue.jpg";
+import PurePressed from "../Components/Assets/Images/product/pure-pressed.webp";
 export const navHeader = [
     {
         name: "skincare",
@@ -108,5 +111,88 @@ export const navFooter = [
                 url: "#",
             },
         ],
+    },
+];
+export const trendingProduct = [
+    {
+        product: {
+            description: "Self-Up Volume Treatment",
+            image: JennyHouse,
+            name: "Jennyhouse",
+            rating: 4.1,
+        },
+    },
+    {
+        product: {
+            description: "Lumière Vital C Serum",
+            image: Femmue,
+            name: "Femmue",
+            rating: 4.1,
+        },
+    },
+    {
+        product: {
+            description: "Pure Pressed Blush",
+            image: PurePressed,
+            name: "Juice Beauty",
+            rating: 4.1,
+        },
+    },
+    {
+        product: {
+            description: "Self-Up Volume Treatment",
+            image: JennyHouse,
+            name: "Jennyhouse",
+            rating: 4.1,
+        },
+    },
+    {
+        product: {
+            description: "Lumière Vital C Serum",
+            image: Femmue,
+            name: "Femmue",
+            rating: 4.1,
+        },
+    },
+    {
+        product: {
+            description: "Pure Pressed Blush",
+            image: PurePressed,
+            name: "Juice Beauty",
+            rating: 4.1,
+        },
+    },
+
+    {
+        product: {
+            description: "Lumière Vital C Serum",
+            image: Femmue,
+            name: "Femmue",
+            rating: 4.1,
+        },
+    },
+    {
+        product: {
+            description: "Pure Pressed Blush",
+            image: PurePressed,
+            name: "Juice Beauty",
+            rating: 4.1,
+        },
+    },
+    {
+        product: {
+            description: "Self-Up Volume Treatment",
+            image: JennyHouse,
+            name: "Jennyhouse",
+            rating: 4.1,
+        },
+    },
+    {
+        product: {
+            description: "Lumière Vital C Serum",
+            image: Femmue,
+            name: "Femmue",
+            rating: 4.1,
+        },
     },
 ];

@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick/lib/slider";
 import { Col, Container, Row } from "reactstrap";
 import CardReview from "../../Components/Card/CardReview";
+import SkeletonLoading from "../../Components/Skeleton";
 const LatestReviews = ({ product = [] }) => {
     const settings = {
         dots: true,
@@ -31,16 +32,33 @@ const LatestReviews = ({ product = [] }) => {
                     </Col>
                     <Col sm={8}>
                         <Slider {...settings}>
-                            {product &&
-                                product.map((item, key) => {
-                                    return (
-                                        <div key={key}>
-                                            <div className="card-slider">
-                                                <CardReview item={item} />
-                                            </div>
-                                        </div>
-                                    );
-                                })}
+                            {product
+                                ? product.map((item, key) => {
+                                      return (
+                                          <div key={key}>
+                                              <div className="card-slider">
+                                                  <CardReview
+                                                      rate={false}
+                                                      item={item}
+                                                  />
+                                              </div>
+                                          </div>
+                                      );
+                                  })
+                                : [...Array(5)].map((el, i) => {
+                                      return (
+                                          <div key={i}>
+                                              <Col>
+                                                  <SkeletonLoading
+                                                      height={"250px"}
+                                                      style={{
+                                                          marginBottom: 15,
+                                                      }}
+                                                  />
+                                              </Col>
+                                          </div>
+                                      );
+                                  })}
                         </Slider>
                     </Col>
                     <Col sm={4}>
@@ -55,7 +73,7 @@ const LatestReviews = ({ product = [] }) => {
     );
 };
 const NextArrow = (props) => {
-    const { className, style, onClick } = props;
+    const { style, onClick } = props;
     return (
         <i
             style={{ ...style }}
@@ -66,7 +84,7 @@ const NextArrow = (props) => {
 };
 
 const PrevArrow = (props) => {
-    const { className, style, onClick } = props;
+    const { style, onClick } = props;
     return (
         <i
             style={{ ...style }}

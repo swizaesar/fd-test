@@ -59,6 +59,7 @@ const Style = styled.header`
             }
         }
         &-bottom {
+            border-bottom: 2px solid #ddd;
             .nav {
                 justify-content: center;
                 text-transform: uppercase;

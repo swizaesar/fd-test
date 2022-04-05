@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import CardArticle from "../../Components/Card/CardArticle";
+import SkeletonLoading from "../../Components/Skeleton";
 
 const LatestArticles = ({ product }) => {
     return (
@@ -17,14 +18,26 @@ const LatestArticles = ({ product }) => {
                     </div>
                 </div>
                 <Row>
-                    {product &&
-                        product.map((item, key) => {
-                            return (
-                                <Col sm={4} key={key}>
-                                    <CardArticle item={item} />
-                                </Col>
-                            );
-                        })}
+                    {product
+                        ? product.map((item, key) => {
+                              return (
+                                  <Col sm={4} key={key}>
+                                      <CardArticle item={item} />
+                                  </Col>
+                              );
+                          })
+                        : [...Array(3)].map((el, i) => {
+                              return (
+                                  <Col key={i}>
+                                      <SkeletonLoading
+                                          height={"200px"}
+                                          style={{
+                                              marginBottom: 15,
+                                          }}
+                                      />
+                                  </Col>
+                              );
+                          })}
                 </Row>
             </Container>
         </div>

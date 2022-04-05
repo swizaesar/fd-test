@@ -2,12 +2,13 @@ import React from "react";
 import Slider from "react-slick/lib/slider";
 import { Col, Container, Row } from "reactstrap";
 import CardProduct from "../../Components/Card/CardProduct";
+import { trendingProduct } from "../../Utils/Helpers";
 
 const Trending = ({ product }) => {
     const settings = {
         dots: true,
         slidesToShow: 5,
-        slidesToScroll: 1,
+        slidesToScroll: 5,
         arrows: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
@@ -26,32 +27,19 @@ const Trending = ({ product }) => {
                             </div>
                         </div>
                         <Slider {...settings}>
-                            {product &&
-                                product.map((item, key) => {
-                                    return (
-                                        <div key={key}>
-                                            <div className="card-slider">
-                                                <CardProduct
-                                                    useUser={false}
-                                                    item={item}
-                                                />
-                                            </div>
+                            {trendingProduct.map((item, key) => {
+                                return (
+                                    <div key={key}>
+                                        <div className="card-slider">
+                                            <CardProduct
+                                                border={false}
+                                                useUser={false}
+                                                item={item}
+                                            />
                                         </div>
-                                    );
-                                })}
-                            {product &&
-                                product.map((item, key) => {
-                                    return (
-                                        <div key={key}>
-                                            <div className="card-slider">
-                                                <CardProduct
-                                                    useUser={false}
-                                                    item={item}
-                                                />
-                                            </div>
-                                        </div>
-                                    );
-                                })}
+                                    </div>
+                                );
+                            })}
                         </Slider>
                     </Col>
                 </Row>
@@ -60,7 +48,7 @@ const Trending = ({ product }) => {
     );
 };
 const NextArrow = (props) => {
-    const { className, style, onClick } = props;
+    const { style, onClick } = props;
     return (
         <i
             style={{ ...style }}
@@ -71,7 +59,7 @@ const NextArrow = (props) => {
 };
 
 const PrevArrow = (props) => {
-    const { className, style, onClick } = props;
+    const { style, onClick } = props;
     return (
         <i
             style={{ ...style }}

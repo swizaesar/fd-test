@@ -1,9 +1,10 @@
 import React from "react";
 import Style from "./style";
 
-const Rating = ({ rating = 0 }) => {
+const Rating = ({ rating = 0, rate = true, rated = 7 }) => {
     return (
         <Style>
+            {rate && <span>{rating} </span>}
             {[...Array(5)].map((el, i) => (
                 <i
                     key={i}
@@ -12,7 +13,7 @@ const Rating = ({ rating = 0 }) => {
                     }`}
                 ></i>
             ))}{" "}
-            <span>({rating})</span>
+            {rate && <span className="rated">({rated})</span>}
         </Style>
     );
 };

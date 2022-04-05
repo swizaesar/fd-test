@@ -4,11 +4,11 @@ import Rating from "../Rating";
 import { CardReviewStyle } from "./style";
 import userDummy from "../Assets/Images/user-icon.jpg";
 
-const CardReview = ({ item }) => {
+const CardReview = ({ item, rate = true }) => {
     const [isRead, setRead] = React.useState(false);
     const handleReadMore = () => setRead(!isRead);
     return (
-        <CardReviewStyle isRead={isRead}>
+        <CardReviewStyle active={isRead.toString()}>
             <CardBody>
                 <div className="card-top">
                     <img
@@ -25,7 +25,7 @@ const CardReview = ({ item }) => {
                 </div>
                 <div>
                     <div className="card-top__rating">
-                        <Rating rating={item.star} />
+                        <Rating rate={rate} rating={item.star} />
                     </div>
                     <div className="card-top__comment">
                         <span className="card-top__comment-text">

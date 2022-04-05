@@ -11,13 +11,13 @@ const Style = styled.div`
         width: 970px;
         margin: auto;
         height: 50px;
-        border: 1px solid #4a4a4a;
-        background: #aaaa;
+        border: 1px solid #c7c7c7;
+        background: #d8d8d8;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 20px;
-        color: #4a4a4a;
+        color: #5b5b5b;
         font-size: 26px;
         text-align: center;
         font-weight: 700;
@@ -27,13 +27,13 @@ const Style = styled.div`
         margin: auto;
         width: 970px;
         height: 250px;
-        border: 1px solid #4a4a4a;
-        background: #aaaa;
+        border: 1px solid #c7c7c7;
+        background: #d8d8d8;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 20px;
-        color: #4a4a4a;
+        margin-bottom: 35px;
+        color: #5b5b5b;
         font-size: 26px;
         font-weight: 700;
     }
@@ -42,13 +42,13 @@ const Style = styled.div`
         margin: auto;
         width: 300px;
         height: 250px;
-        border: 1px solid #4a4a4a;
-        background: #aaaa;
+        border: 1px solid #c7c7c7;
+        background: #d8d8d8;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 20px;
-        color: #4a4a4a;
+        color: #5b5b5b;
         font-size: 26px;
         font-weight: 700;
     }
@@ -61,6 +61,8 @@ const Style = styled.div`
         &-skin {
             background-color: ${color.secondary};
             padding: 20px;
+            padding-bottom: 0;
+            margin-bottom: 40px;
             .title {
                 font-size: 18px;
                 font-weight: 700;
@@ -103,10 +105,11 @@ const Style = styled.div`
                 &-slider {
                     .fas {
                         position: absolute;
-                        bottom: -32px;
+                        bottom: -35px;
                         color: ${color.primary};
                         cursor: pointer;
                         z-index: 2;
+                        font-size: 20px;
                     }
                     .fa-angle-right {
                         right: 310px;
@@ -134,11 +137,16 @@ const Style = styled.div`
             .slick {
                 &-slider {
                     .fa-angle-right {
-                        right: 400px;
+                        bottom: 25px;
+                        right: 520px;
                     }
                     .fa-angle-left {
-                        left: 400px;
+                        bottom: 25px;
+                        left: 520px;
                     }
+                }
+                &-dots {
+                    bottom: 25px;
                 }
             }
         }
@@ -179,9 +187,10 @@ const Style = styled.div`
             &__bottom {
                 h4 {
                     font-weight: 700;
+                    font-size: 20px;
                 }
                 p {
-                    font-size: 20px;
+                    font-size: 16px;
                 }
             }
         }

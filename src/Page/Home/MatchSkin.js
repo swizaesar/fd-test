@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import CardProduct from "../../Components/Card/CardProduct";
 import Button from "../../Components/Button";
+import SkeletonLoading from "../../Components/Skeleton";
 
 const MatchSkin = ({ product = [] }) => {
     return (
@@ -29,19 +30,31 @@ const MatchSkin = ({ product = [] }) => {
                             </Col>
                             <Col sm={8}>
                                 <Row>
-                                    {product &&
-                                        product.map((item, key) => {
-                                            return (
-                                                key < 3 && (
-                                                    <Col key={key}>
-                                                        <CardProduct
-                                                            useUser={false}
-                                                            item={item}
-                                                        />
-                                                    </Col>
-                                                )
-                                            );
-                                        })}
+                                    {product?.length > 0
+                                        ? product.map((item, key) => {
+                                              return (
+                                                  key < 3 && (
+                                                      <Col key={key}>
+                                                          <CardProduct
+                                                              useUser={false}
+                                                              item={item}
+                                                          />
+                                                      </Col>
+                                                  )
+                                              );
+                                          })
+                                        : [...Array(3)].map((el, i) => {
+                                              return (
+                                                  <Col key={i}>
+                                                      <SkeletonLoading
+                                                          height={"230px"}
+                                                          style={{
+                                                              marginBottom: 15,
+                                                          }}
+                                                      />
+                                                  </Col>
+                                              );
+                                          })}
                                 </Row>
                             </Col>
                         </Row>

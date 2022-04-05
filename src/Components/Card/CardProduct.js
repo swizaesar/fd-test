@@ -3,9 +3,9 @@ import { CardBody } from "reactstrap";
 import Rating from "../Rating";
 import { CardProductStyle } from "./style";
 import userDummy from "../Assets/Images/user-icon.jpg";
-const CardProduct = ({ item, useUser = false }) => {
+const CardProduct = ({ item, useUser = false, border = true }) => {
     return (
-        <CardProductStyle>
+        <CardProductStyle border={border.toString()}>
             {useUser && (
                 <div className="product-user">
                     <img

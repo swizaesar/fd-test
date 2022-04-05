@@ -15,12 +15,12 @@
   margin: auto;
   width: 970px;
   height: 50px;
-  border: 1px solid #4a4a4a;
-  background: #aaaa;
+  border: 1px solid #c7c7c7;
+  background: #d8d8d8;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #4a4a4a;
+  color: #5b5b5b;
   font-size: 26px;
   font-weight: 700;
 }

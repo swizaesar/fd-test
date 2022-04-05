@@ -21,7 +21,7 @@ const LatestVideos = () => {
                                 height="100%"
                                 width="100%"
                                 src="https://www.youtube.com/embed/6LUdS0VFOJc"
-                                frameborder="0"
+                                frameBorder="0"
                             ></iframe>
                         </div>
                         <div className="grid-2">
@@ -29,7 +29,7 @@ const LatestVideos = () => {
                                 height="100%"
                                 width="100%"
                                 src="https://www.youtube.com/embed/3xX85gS--cs"
-                                frameborder="0"
+                                frameBorder="0"
                             ></iframe>
                         </div>
                         <div className="grid-3">
@@ -37,7 +37,7 @@ const LatestVideos = () => {
                                 height="100%"
                                 width="100%"
                                 src="https://www.youtube.com/embed/BKrWndOeFW4"
-                                frameborder="0"
+                                frameBorder="0"
                             ></iframe>
                         </div>
                     </div>

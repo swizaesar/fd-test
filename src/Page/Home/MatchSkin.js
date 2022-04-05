@@ -9,7 +9,7 @@ const MatchSkin = ({ product = [] }) => {
         <div className="section-skin">
             <Container>
                 <Row className="justify-content-center">
-                    <Col sm={8}>
+                    <Col sm={9}>
                         <Row className="align-items-center">
                             <Col sm={4}>
                                 <h3 className="title">
@@ -28,7 +28,7 @@ const MatchSkin = ({ product = [] }) => {
                                     </Button>
                                 </div>
                             </Col>
-                            <Col sm={9}>
+                            <Col sm={8}>
                                 <Row>
                                     {product?.length > 0
                                         ? product.map((item, key) => {
